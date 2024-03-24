@@ -3,6 +3,7 @@ import requests,openpyxl                           # import the requst and opean
 import pandas as pd
 excel = openpyxl.Workbook()                  # store data in workbook 
 from openpyxl.drawing.image import Image
+import time
 print(excel.sheetnames)                  # print the sheet name 
 
 sheet = excel.active                                        
@@ -65,4 +66,5 @@ except Exception as e:
     #     save the sheet with name of imdb movie rating 
 
 excel.save('IMDB Movie Rating.xlsx')
+
 
